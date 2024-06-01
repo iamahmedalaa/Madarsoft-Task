@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.madarsoft_task.userInterface.UserEntryFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/action_show_saved_data"
+            app:destination="@id/nav_saved_data" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_saved_data"
+        android:name="com.example.madarsoft_task.userInterface.SavedDataFragment"
+        android:label="@string/saved_data" />
+</navigation>
